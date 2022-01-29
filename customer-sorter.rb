@@ -46,5 +46,5 @@ pipes.each do |customer|
   Customer.new(customer.split('|')[0], customer.split('|')[1], customer.split('|')[2], customer.split('|')[3].downcase, customer.split('|')[4], customer.split('|')[5])
 end
 
-# puts Customer.sort_by_name
-puts Customer.sort_by_vehicle
+puts Customer.sort_by_name
+# puts Customer.sort_by_vehicle
