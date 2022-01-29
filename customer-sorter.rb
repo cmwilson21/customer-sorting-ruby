@@ -39,11 +39,11 @@ class Customer
 end
 
 commas.each do |customer|
-  Customer.new(customer.split(',')[0], customer.split(',')[1], customer.split(',')[2], customer.split(',')[3].upcase, customer.split(',')[4], customer.split(',')[5])
+  Customer.new(customer.split(',')[0], customer.split(',')[1], customer.split(',')[2], customer.split(',')[3].downcase, customer.split(',')[4], customer.split(',')[5])
 end
 
 pipes.each do |customer|
-  Customer.new(customer.split('|')[0], customer.split('|')[1], customer.split('|')[2], customer.split('|')[3].upcase, customer.split('|')[4], customer.split('|')[5])
+  Customer.new(customer.split('|')[0], customer.split('|')[1], customer.split('|')[2], customer.split('|')[3].downcase, customer.split('|')[4], customer.split('|')[5])
 end
 
 # puts Customer.sort_by_name
