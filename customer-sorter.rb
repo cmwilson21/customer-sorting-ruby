@@ -46,5 +46,18 @@ pipes.each do |customer|
   Customer.new(customer.split('|')[0], customer.split('|')[1], customer.split('|')[2], customer.split('|')[3].downcase, customer.split('|')[4], customer.split('|')[5])
 end
 
-puts Customer.sort_by_name
-# puts Customer.sort_by_vehicle
+# sortName = puts Customer.sort_by_name
+# sortVehicle = puts Customer.sort_by_vehicle
+
+# for i in 0 ... ARGV.length
+#   puts "#{i} #{ARGV[i]}"
+# end
+
+sortName = for arg in ARGV
+  puts Customer.sort_by_name
+  # puts Customer.sort_by_vehicle
+end
+
+sortVehicle = for arg in ARGV
+  puts Customer.sort_by_vehicle
+end
