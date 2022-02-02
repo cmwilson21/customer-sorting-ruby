@@ -1,4 +1,3 @@
-# commas = File.readlines(ARGV[0])
 commas = File.readlines('commas.txt')
 pipes = File.readlines('pipes.txt')
 
