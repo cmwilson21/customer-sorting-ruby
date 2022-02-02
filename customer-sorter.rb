@@ -1,3 +1,4 @@
+# commas = File.readlines(ARGV[0])
 commas = File.readlines('commas.txt')
 pipes = File.readlines('pipes.txt')
 
@@ -46,18 +47,12 @@ pipes.each do |customer|
   Customer.new(customer.split('|')[0], customer.split('|')[1], customer.split('|')[2], customer.split('|')[3].downcase, customer.split('|')[4], customer.split('|')[5])
 end
 
-# sortName = puts Customer.sort_by_name
-# sortVehicle = puts Customer.sort_by_vehicle
 
-# for i in 0 ... ARGV.length
-#   puts "#{i} #{ARGV[i]}"
-# end
+method = ARGV[0]
 
-sortName = for arg in ARGV
+
+if method == "name"
   puts Customer.sort_by_name
-  # puts Customer.sort_by_vehicle
-end
-
-sortVehicle = for arg in ARGV
+elsif method == "vehicle"
   puts Customer.sort_by_vehicle
 end
